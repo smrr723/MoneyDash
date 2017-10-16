@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-   <link rel="stylesheet" href="/styles.css">
+   <link href="/styles.css" rel="stylesheet" type="text/css">
    <title>MoneyDash</title>
 </head>
 <body>
@@ -14,15 +14,15 @@
       <nav>
         <ul>
          <li><a href="/transactions">HOME</a></li>
-         <li><a href="/transactions/new">NEW STUDENT</a></li>
+         <li><a href="/transactions/new">NEW TRANSACTION</a></li>
         </ul>
       </nav>
      <h1>moneydash</h1>
    </div>
    </header>
    <div id="content">
-      <a href="/transactions/new"><div id="create-new">
-         ADD TRANSACTION
+      <a href="/transactions/new"><div id="create-button">
+         NEW TRANSACTION
       </div></a>
      <%= yield %>
    </div>

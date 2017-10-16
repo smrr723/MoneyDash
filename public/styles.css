@@ -3,6 +3,11 @@
   font-size: 11px;
 }
 
+body {
+   background: linear-gradient(90deg, #6027c4 0%,#2eb7f7 100%,#7db9e8 100%,#2eb7f7 101%);
+   min-height: 100%;
+}
+
 ul {
    list-style-type: none;
    padding: 0;
@@ -11,8 +16,43 @@ ul {
 
 a {
    color: #27aa9e;
+   text-decoration: none;
+}
+
+h1 {
+   color: #FFF;
+   font-size: 20px;
 }
 
 li {
   display: inline-block; margin-right: 10px;
+}
+
+#content {
+   padding: 10px 90px 10px 90px;
+}
+
+#create-button {
+   background: #3ecf8e;
+   height: 40px;
+   width: 160px;
+   color: #FFF;
+   border-radius: 4px;
+   text-transform: uppercase;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header {
+   padding-left: 90px;
+   padding-right: 90px;}
+
+#displayblock {
+   background: #FFF;
+   opacity: 0.9;
+   padding: 10px 20px 10px 40px;
+   margin: 20px 10px 10px 10px;
+
+   border-radius: 4px;
 }
