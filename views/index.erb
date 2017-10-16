@@ -1,0 +1,10 @@
+<% @transactions.each do |transaction| %>
+<div id="displayblock">
+   <div id="transaction">
+      <p>Transaction: <%= transaction.name %></p>
+      <p>Amount: <%= transaction.amount %></p>
+   </div>
+
+</div>
+
+<% end %>

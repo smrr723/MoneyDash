@@ -25,5 +25,11 @@ def self.delete_all()
    SqlRunner.run(sql, values)
 end
 
+def self.all()
+   sql = "SELECT * FROM categories"
+   values = []
+   categories = SqlRunner.run(sql, values)
+   result = categories.map{|category| Category.new( category )}
+   return result
 
 end

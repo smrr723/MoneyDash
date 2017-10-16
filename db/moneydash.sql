@@ -9,5 +9,6 @@ CREATE TABLE categories (
 CREATE TABLE transactions (
    id SERIAL8 PRIMARY KEY,
    name VARCHAR(255),
+   amount INT8,
    category_id INT8 REFERENCES categories(id) ON DELETE CASCADE
 );
