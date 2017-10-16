@@ -31,5 +31,6 @@ def self.all()
    categories = SqlRunner.run(sql, values)
    result = categories.map{|category| Category.new( category )}
    return result
+end
 
 end
