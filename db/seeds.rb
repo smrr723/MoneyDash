@@ -10,16 +10,21 @@ category1 = Category.new({'name' => 'Utilities'
 
 category1.save()
 
-transaction1 = Transaction.new({'name' => 'ELECTRICITY', 'amount' => 150.00,'category_id' => category1.id
+category2 = Category.new({'name' => 'Rent'
+   })
+
+category2.save()
+
+transaction1 = Transaction.new({'name' => 'SSE Hydro', 'amount' => 150.00,'category_id' => category1.id
    })
 
 transaction1.save()
 
-transaction2 = Transaction.new({'name' => 'INTERNET', 'amount' => 55.00, 'category_id' => category1.id
+transaction2 = Transaction.new({'name' => 'Virgin Media', 'amount' => 55.00, 'category_id' => category1.id
    })
 transaction2.save()
 
-transaction3 = Transaction.new({'name' => 'RENT', 'amount' => 555.00, 'category_id' => category1.id
+transaction3 = Transaction.new({'name' => 'Aberdein Considine', 'amount' => 555.00, 'category_id' => category2.id
    })
 transaction3.save()
 
