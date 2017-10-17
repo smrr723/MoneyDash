@@ -69,6 +69,29 @@ header {
    color: #FFF;
 }
 
+#overview {
+   display: flex;
+   justify-content: space-between;
+}
+
+#categoryblock {
+   background: #3ecf8e;
+   height: 40px;
+   width: 160px;
+   color: #FFF;
+   border-radius: 4px;
+   text-transform: uppercase;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 10px;
+}
+#categories {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
 
 #displayblock {
    background: #FFF;
