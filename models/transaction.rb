@@ -3,13 +3,14 @@ require_relative('../db/sql_runner')
 class Transaction
 
 attr_reader :id
-attr_accessor :name, :amount, :category_id
+attr_accessor :name, :amount, :category_id, :time_added
 
 def initialize( options )
    @id = options['id'].to_i if options['id']
    @name = options['name']
    @amount = options['amount'].to_i
    @category_id = options['category_id'].to_i
+   @time_added = (Date)Time.current
 end
 
 
@@ -24,10 +25,9 @@ end
 
 # CRUD Operations
 
-
 def save()
-   sql = "INSERT INTO transactions (name, amount, category_id) VALUES ($1, $2, $3) RETURNING id"
-   values = [@name, @amount, @category_id]
+   sql = "INSERT INTO transactions (name, amount, category_id) VALUES ($1, $2, $3, $4) RETURNING id"
+   values = [@name, @amount, @category_id, @time_added]
    transaction = SqlRunner.run(sql, values).first
    @id = transaction['id'].to_i
 end
