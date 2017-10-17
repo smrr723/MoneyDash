@@ -43,16 +43,29 @@ li {
    justify-content: center;
    align-items: center;
 }
+#create-button:hover {
+   transform: translateY(2px);
+}
 
 header {
    padding-left: 90px;
-   padding-right: 90px;}
+   padding-right: 90px;
+   display: flex;
+   justify-content: space-between;
+}
+#right-align a {
+   color: #FFF;
+}
+
 
 #displayblock {
    background: #FFF;
    opacity: 0.9;
    padding: 10px 20px 10px 40px;
    margin: 20px 10px 10px 10px;
-
    border-radius: 4px;
+}
+
+#displayblock:hover {
+   transform: translateY(2px);
 }

@@ -19,5 +19,9 @@ transaction2 = Transaction.new({'name' => 'INTERNET', 'amount' => 55.00, 'catego
    })
 transaction2.save()
 
+transaction3 = Transaction.new({'name' => 'RENT', 'amount' => 555.00, 'category_id' => category1.id
+   })
+transaction3.save()
+
 binding.pry
 nil
