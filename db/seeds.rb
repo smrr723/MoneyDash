@@ -27,16 +27,16 @@ category5 = Category.new({'name' => 'Other'
    })
 category5.save()
 
-transaction1 = Transaction.new({'name' => 'SSE Hydro', 'amount' => 150.00,'category_id' => category1.id
+transaction1 = Transaction.new({'name' => 'SSE Hydro', 'amount' => 150.00,'category_id' => category1.id, 'time_added' => (Date)Time.current
    })
 
 transaction1.save()
 
-transaction2 = Transaction.new({'name' => 'Virgin Media', 'amount' => 55.00, 'category_id' => category1.id
+transaction2 = Transaction.new({'name' => 'Virgin Media', 'amount' => 55.00, 'category_id' => category1.id, 'time_added' => (Date)Time.current
    })
 transaction2.save()
 
-transaction3 = Transaction.new({'name' => 'Aberdein Considine', 'amount' => 555.00, 'category_id' => category2.id
+transaction3 = Transaction.new({'name' => 'Aberdein Considine', 'amount' => 555.00, 'category_id' => category2.id, 'time_added' => (Date)Time.current
    })
 transaction3.save()
 
