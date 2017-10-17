@@ -10,10 +10,22 @@ category1 = Category.new({'name' => 'Utilities'
 
 category1.save()
 
-category2 = Category.new({'name' => 'Rent'
+category2 = Category.new({'name' => 'Rent/Mortgage'
    })
 
 category2.save()
+
+category3 = Category.new({'name' => 'Groceries'
+   })
+category3.save()
+
+category4 = Category.new({'name' => 'Transport'
+   })
+category4.save()
+
+category5 = Category.new({'name' => 'Other'
+   })
+category5.save()
 
 transaction1 = Transaction.new({'name' => 'SSE Hydro', 'amount' => 150.00,'category_id' => category1.id
    })
