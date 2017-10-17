@@ -1,4 +1,6 @@
-
+<div id="total">
+<%= @total %>
+</div>
 
 <% @transactions.each do |transaction| %>
 <div id="displayblock">
@@ -8,5 +10,19 @@
    </div>
 
 </div>
+
+<% end %>
+
+<% if @a %>
+<% @a.each do |category| %>
+<% data = category.values %>
+<div id="displayblock">
+   <div id="transaction">
+      <p>Category Name: <%= data[0] %></p>
+      <p>Category Total: <%= data[1] %></p>
+   </div>
+
+</div>
+<% end %>
 
 <% end %>

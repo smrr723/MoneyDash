@@ -12,17 +12,18 @@ def initialize( options )
    @category_id = options['category_id'].to_i
 end
 
-# CRUD Operations
 
 def self.total()
-   # total_amount = 0
-   # transactions = Transaction.all()
-   # transactions.each do |transaction|
-   #    total_amount += transaction.amount
-   # end
-   # return total_amount
-   return "Hello"
+   total_amount = 0
+   transactions = Transaction.all()
+   transactions.each do |transaction|
+      total_amount += transaction.amount
+   end
+   return total_amount
 end
+
+# CRUD Operations
+
 
 def save()
    sql = "INSERT INTO transactions (name, amount, category_id) VALUES ($1, $2, $3) RETURNING id"

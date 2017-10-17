@@ -77,3 +77,15 @@ header {
    margin: 20px 10px 10px 10px;
    border-radius: 4px;
 }
+
+#total {
+   background: #3ecf8e;
+   height: 40px;
+   width: 160px;
+   color: #FFF;
+   border-radius: 4px;
+   text-transform: uppercase;
+   display: flex;
+   justify-content: center;
+   align-items: center;:
+}

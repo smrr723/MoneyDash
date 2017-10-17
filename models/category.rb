@@ -33,4 +33,13 @@ def self.all()
    return result
 end
 
+def transactions()
+   sql = "SELECT * FROM transactions WHERE category_id = $1"
+   values = [self.id]
+   transactions = SqlRunner.run(sql, values)
+
+   result = transactions.map{|transaction| Transaction.new( transaction )}
+   return result
+end
+
 end
