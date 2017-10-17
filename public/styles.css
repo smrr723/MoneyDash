@@ -50,6 +50,9 @@ li {
    display: flex;
    justify-content: space-between;
 }
+.tblock {
+   width: 200px;
+}
 
 header {
    padding-left: 90px;
