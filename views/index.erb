@@ -5,9 +5,9 @@
 <% @transactions.each do |transaction| %>
 <div id="displayblock">
    <div id="transaction">
-      <div id="tname" class="tblock"><p>Transaction: <%= transaction.name %></p></div>
-      <div id="tamount" class="tblock"><p>Amount: <%= transaction.amount %></p></div>
-      <div id="tdate" class="tblock"><p>Date/Time: <%= transaction.time_added %></p></div>
+      <div id="tname" class="tblock"><p><%= transaction.name %></p></div>
+      <div id="tamount" class="tblock"><p>£ <%= transaction.amount %></p></div>
+      <div id="tdate" class="tblock"><p><%= transaction.time_added %></p></div>
    </div>
 
 </div>
