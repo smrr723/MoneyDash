@@ -1,7 +1,16 @@
-<div id="total">
-£<%= @total %>
-</div>
 
+<div id="overview">
+   <div id="left">
+      <a href="/transactions/new"><div id="create-button">
+         NEW TRANSACTION
+      </div></a>
+   </div>
+   <div id="right">
+      <div id="total">
+         £<%= @total %>
+      </div>
+   </div>
+</div>
 <% @transactions.each do |transaction| %>
 <div id="displayblock">
    <div id="transaction">
@@ -18,10 +27,10 @@
 <% @a.each do |category| %>
 <% data = category.values %>
 <div id="displayblock">
-   <div id="transaction">
-<!-- Category Name -->
+   <div id="categories">
+      <!-- Category Name -->
       <p><%= data[0] %></p>
-<!-- Category Total Spent -->
+      <!-- Category Total Spent -->
       <p>£<%= data[1] %></p>
    </div>
 
