@@ -14,6 +14,16 @@ end
 
 # CRUD Operations
 
+def self.total()
+   # total_amount = 0
+   # transactions = Transaction.all()
+   # transactions.each do |transaction|
+   #    total_amount += transaction.amount
+   # end
+   # return total_amount
+   return "Hello"
+end
+
 def save()
    sql = "INSERT INTO transactions (name, amount, category_id) VALUES ($1, $2, $3) RETURNING id"
    values = [@name, @amount, @category_id]
@@ -50,18 +60,8 @@ def category()
   return result['name']
 end
 
-def self.total()
-   total_amount = 0
-   sql = "SELECT * FROM transactions"
-   values = []
-   transactions = SqlRunner.run(sql, values)
-   result = transactions.map {|transaction| Transaction.new( transaction )}
-   return result['amount'].to_i
-   # for trans in result
-   #    total_amount += trans['amount']
-   # end
-   # return total_amount
-end
+
+
 end
 #
 

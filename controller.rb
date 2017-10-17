@@ -8,6 +8,7 @@ require_relative ('./models/category')
 
 get '/transactions' do
    @transactions = Transaction.all()
+   @total = Transaction.total()
    erb( :index )
 end
 
