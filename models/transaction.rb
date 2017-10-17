@@ -10,7 +10,7 @@ def initialize( options )
    @name = options['name']
    @amount = options['amount'].to_i
    @category_id = options['category_id'].to_i
-   @time_added = (Date)Time.current
+   @time_added = DateTime.now
 end
 
 
@@ -26,7 +26,7 @@ end
 # CRUD Operations
 
 def save()
-   sql = "INSERT INTO transactions (name, amount, category_id) VALUES ($1, $2, $3, $4) RETURNING id"
+   sql = "INSERT INTO transactions (name, amount, category_id, time_added) VALUES ($1, $2, $3, $4) RETURNING id"
    values = [@name, @amount, @category_id, @time_added]
    transaction = SqlRunner.run(sql, values).first
    @id = transaction['id'].to_i
