@@ -12,7 +12,7 @@ get '/transactions' do
 end
 
 get '/transactions/new' do
-   @transactions = Category.all()
+   @categories = Category.all()
    erb( :new )
 end
 

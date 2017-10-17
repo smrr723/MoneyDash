@@ -43,8 +43,25 @@ def self.find(id)
    return result
 end
 
+def category()
+  sql = "SELECT categories.name FROM categories WHERE id = $1;"
+  values = [@category_id]
+  result = SqlRunner.run(sql, values).first
+  return result['name']
+end
 
-
+def self.total()
+   total_amount = 0
+   sql = "SELECT * FROM transactions"
+   values = []
+   transactions = SqlRunner.run(sql, values)
+   result = transactions.map {|transaction| Transaction.new( transaction )}
+   return result['amount'].to_i
+   # for trans in result
+   #    total_amount += trans['amount']
+   # end
+   # return total_amount
+end
 end
 #
 

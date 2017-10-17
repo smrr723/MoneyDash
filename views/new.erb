@@ -1,0 +1,13 @@
+<form action="/transactions" method="POST">
+   <label for="name">Name:</label>
+   <input type="text" name="name" id="name">
+   <label for="amount">Amount:</label>
+   <input type="text" name="amount" id="amount">
+   <label for="category">Select a category:</label>
+   <select name="category_id" id="category>">
+   <% @categories.each do |acategory|%>
+     <option id ="categorybox" value="<%= acategory.id %>"><%= acategory.name %></option>
+     <% end %>
+   </select>
+   <input type="submit" value="Submit">
+</form>
