@@ -1,11 +1,14 @@
 * {
   font-family: 'Open Sans', sans-serif;
-  font-size: 11px;
 }
 
 body {
    background: linear-gradient(90deg, #6027c4 0%,#2eb7f7 100%,#7db9e8 100%,#2eb7f7 101%);
    min-height: 100%;
+}
+
+nav {
+   font-size: 10px;
 }
 
 ul {
@@ -42,6 +45,7 @@ li {
    display: flex;
    justify-content: center;
    align-items: center;
+   font-size: 10px;
 }
 #create-button:hover {
    transform: translateY(2px);
@@ -49,6 +53,7 @@ li {
 #transaction {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .tblock {
    width: 200px;
@@ -73,7 +78,7 @@ header {
    border-radius: 4px;
    text-transform: uppercase;
    color: #b1b1b1;
-   font-size: 18px;
+   font-size: 14px;
    font-weight: bold;
 }
 
