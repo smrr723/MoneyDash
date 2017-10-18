@@ -29,7 +29,6 @@ category5.save()
 
 transaction1 = Transaction.new({'name' => 'SSE Hydro', 'amount' => 150.00,'category_id' => category1.id, 'time_added' => '01-05-2017'
    })
-
 transaction1.save()
 
 transaction2 = Transaction.new({'name' => 'Virgin Media', 'amount' => 55.00, 'category_id' => category1.id, 'time_added' => '02-06-2017'
@@ -39,6 +38,18 @@ transaction2.save()
 transaction3 = Transaction.new({'name' => 'Aberdein Considine', 'amount' => 555.00, 'category_id' => category2.id, 'time_added' => '03-07-2017'
    })
 transaction3.save()
+
+transaction4 = Transaction.new({'name' => 'SPT Underground', 'amount' => 50.50, 'category_id' => category4.id, 'time_added' => '03-07-2017'
+   })
+transaction4.save()
+
+transaction5 = Transaction.new({'name' => 'BP Filling Stn', 'amount' => 80.20, 'category_id' => category4.id, 'time_added' => '03-07-2017'
+   })
+transaction5.save()
+
+transaction6 = Transaction.new({'name' => 'Sainsburys', 'amount' => 15.34, 'category_id' => category3.id, 'time_added' => '03-07-2017'
+   })
+transaction6.save()
 
 binding.pry
 nil
