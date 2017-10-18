@@ -61,13 +61,6 @@ def category()
   return result['name']
 end
 
-def house()
-  sql = "SELECT houses.name FROM houses WHERE id = $1;"
-  values = [@house_id]
-  result = SqlRunner.run(sql, values).first
-  return result['name']
-end
-
 def delete()
   sql = "DELETE FROM transactions WHERE id = $1;"
   values = [@id]
@@ -75,13 +68,3 @@ def delete()
 end
 
 end
-#
-
-# def delete()
-# end
-#
-# def edit()
-# end
-#
-# def update()
-# end
