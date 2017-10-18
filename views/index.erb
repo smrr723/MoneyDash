@@ -27,6 +27,7 @@
    </div>
 </div>
 <% @transactions.each do |transaction| %>
+<a href="/transactions/<%= transaction.id %>">
 <div id="displayblock">
    <div id="transaction">
       <div id="tname" class="tblock"><p><%= transaction.name %></p></div>
@@ -35,6 +36,6 @@
       <div id="tdate" class="tblock"><p><%= transaction.time_added %></p></div>
    </div>
 
-</div>
+</div></a>
 
 <% end %>

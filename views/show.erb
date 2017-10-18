@@ -1,0 +1,12 @@
+<div id="displayblock">
+   <div id="transaction">
+      <div id="tname" class="tblock"><p><%= @transaction.name %></p></div>
+      <div id="tamount" class="tblock"><p>£ <%= @transaction.amount %></p></div>
+      <div id="tamount" class="tblock"><p><%= @transaction.category %></p></div>
+      <div id="tdate" class="tblock"><p><%= @transaction.time_added %></p></div>
+
+<form class="" action="/transactions/<%= @transaction.id %>/delete" method="post">
+  <input type="submit" name="" value="Delete">
+</form>
+</div>
+</div>
