@@ -101,12 +101,13 @@ header {
    background: #FFF;
    opacity: 0.9;
    padding: 10px 20px 10px 40px;
-   margin: 20px 10px 10px 10px;
+   margin: 15px 10px 10px 10px;
    border-radius: 4px;
    text-transform: uppercase;
    color: #b1b1b1;
    font-size: 14px;
    font-weight: bold;
+   height: 45px;
 }
 
 #displayblock:hover {
