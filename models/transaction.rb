@@ -10,7 +10,7 @@ def initialize( options )
    @name = options['name']
    @amount = options['amount'].to_i
    @category_id = options['category_id'].to_i
-   @time_added = DateTime.now
+   @time_added = Date.today
 end
 
 
