@@ -6,9 +6,7 @@
       </div></a>
    </div>
    <div id="right">
-      <div id="total">
-         £<%= @total %>
-      </div>
+
       <% if @a %>
       <% @a.each do |category| %>
       <% data = category.values %>
@@ -24,6 +22,9 @@
       <% end %>
 
       <% end %>
+      <div id="total">
+         £<%= @total %>
+      </div>
    </div>
 </div>
 <% @transactions.each do |transaction| %>
