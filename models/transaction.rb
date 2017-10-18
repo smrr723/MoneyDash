@@ -61,7 +61,12 @@ def category()
   return result['name']
 end
 
-
+def house()
+  sql = "SELECT houses.name FROM houses WHERE id = $1;"
+  values = [@house_id]
+  result = SqlRunner.run(sql, values).first
+  return result['name']
+end
 
 end
 #
