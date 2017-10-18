@@ -50,6 +50,15 @@ transaction5.save()
 transaction6 = Transaction.new({'name' => 'Sainsburys', 'amount' => 15.34, 'category_id' => category3.id, 'time_added' => '03-07-2017'
    })
 transaction6.save()
+transaction7 = Transaction.new({'name' => 'Spotify', 'amount' => 7, 'category_id' => category5.id, 'time_added' => '03-07-2017'
+   })
+transaction7.save()
+transaction8 = Transaction.new({'name' => 'Netflix', 'amount' => 7, 'category_id' => category5.id, 'time_added' => '03-07-2017'
+   })
+transaction8.save()
+transaction9 = Transaction.new({'name' => 'Audible', 'amount' => 6, 'category_id' => category5.id, 'time_added' => '03-07-2017'
+   })
+transaction9.save()
 
 binding.pry
 nil

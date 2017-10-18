@@ -14,7 +14,5 @@ class TransactionTest < MiniTest::Test
     actual = @transaction.name()
     assert_equal('SSE Hydro', actual)
   end
-
-
-
+  
 end
